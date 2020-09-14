@@ -1,0 +1,398 @@
+body h1 h2 h3 h4 h5 h6 p span{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* Navebar-part-style */
+.menu-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu-bar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.menu-bar span {
+    display: inline-block;
+    background: #6278df;
+    color: #fff;
+    height: 2.8rem;
+    width: 2.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    position: relative;
+    top: .3rem;
+    font-size: 1.8rem;
+}
+.menu-item .nav-link {
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
+}
+
+/* Bannar-part-style */
+.bannar-section{
+    background: url(https://i.ibb.co/sJYDyK8/mbr-10.jpg) no-repeat center center / cover;
+    padding: 14rem 0;
+    position: relative;
+    z-index: 1;
+}
+.bannar-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.bannar-text .btn{
+    background: #5ba533;
+    padding: 1rem 1rem;
+}
+.bannar-text h4{
+    margin-bottom: 1.5rem;
+}
+.bannar-text h2 {
+	margin-bottom: 2.5rem;
+	font-size: 3.5rem;
+}
+
+/* Number-Section */
+.number-part .n-text{
+    font-size: 3.5rem;
+}
+/* About-part-style */
+.about-part{
+    background: #f7f9ff;
+    
+}
+.about-text {
+	margin-top: 70px;
+}
+/* Fiture-Part-Style */
+.fiture-hading h2{
+    font-size: 2.6rem;
+}
+.fiture-hading h5{
+    font-size: 1.6rem;
+}
+.fiture-item {
+    height: 280px;
+    box-shadow: .3rem .5rem 3rem 0 rgba(64,87,191,0.1);
+}
+.fiture-img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: .3rem 0 0 .3rem;
+}
+.fiture-text {
+    width: 50%;
+    padding: 1.9rem;
+}
+.fiture-img img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+
+/* Prot-polio-style */
+
+.prot-polio-item a{
+    position: relative;
+    display: block;   
+}
+.prot-polio-item a::after{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(91, 95, 146,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    
+}
+.prot-polio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* Pricing-part-style */
+.pricing-hading h1{
+    font-size: 4rem;
+}
+.pricing-hading p{
+    font-size: 1.6rem;
+}
+.pricing-part{
+    background: #f7f9ff;   
+}
+.pricing-item {
+    background: #fff;
+    box-shadow: .3rem .5rem 3rem 0 rgba(64,87,191,0.2);
+    border-radius: .5rem;
+}
+
+.pricing-item h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.pricing-item p{
+    font-size: 1.3rem;
+}
+.pricing-item ul li{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #777;
+}
+.pricing-item ul li span{
+    color: #6880ee;
+    font-weight: bold;
+    display: inline-block;
+    width: 3rem;
+    font-size: 1.8rem;
+}
+.pricing-item-button a{
+    box-shadow: .3rem .5rem 3rem 0 rgba(64,87,191,0.2);
+}
+
+/* User-part-style */
+
+.user-text h5{
+    font-size: 1.6rem;
+}
+.user-text h2{
+    font-size: 2.7rem;
+}
+.user-text span{
+    font-size: 5rem;
+}
+.user-bio{
+    margin: auto;
+    width: 15rem;
+}
+.user-bio img{
+    width: 3.7rem;
+    margin-right: .8rem;   
+}
+.user-bio-text{
+    text-align: left;
+    position: relative;
+    top: .5rem;
+}
+/* Team-part-style */
+.team-part{
+    background: #f7f9ff;
+}
+.team-item img{
+    width: 7.7rem;
+    height: auto;
+    margin-top: -3.5rem;
+    margin-left: .7rem;
+}
+
+/* contact-part-style */
+
+.contact-form-item .card{
+    box-shadow: .3rem .5rem 3rem 0 rgba(64,87,191,0.2);
+    padding: 1.5rem;
+}
+/* softewer-part-style */
+.softwer-part-img img{
+    width: 40rem;
+    height: 27rem;
+}
+/* Footer-Part-Style */
+
+.footer-part{
+    background: #f7f9ff;
+}
+
+
+
+/* RESPONSIVE-PART-CSS */
+@media (max-width:1200px) {
+    .bannar-text h2 {
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+    }
+    .fiture-text {
+        padding: .7rem;
+    }
+    .fiture-text h4 {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width:992px) {
+    .form-control {
+        margin-bottom: 10px;
+    }
+    .bannar-text h2 {
+        font-size: 2.5rem;
+    }
+    .about-text {
+        margin-top: 0;
+    }
+    .prot-polio {
+        padding-top: 0;
+    }
+    .pricing-hading h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    .about-text {
+        margin-top: 0;
+    }
+    .bannar-section {
+        padding: 7rem 0;
+    }
+    .bannar-text h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+    .fiture-text h4 {
+        font-size: 20px;
+    }
+    .pricing-hading h1 {
+        font-size: 3rem;
+    }
+    .pricing-item {
+        margin-bottom: 15px;
+    }
+    .user-text h2 {
+        font-size: 2.2rem;
+    }
+    .team-hading h1 {
+        text-align: center;
+    }
+    .fiture-img {
+        width: 100%;
+    }
+    .fiture-text {
+        width: 100%;
+    }
+    .pricing-hading h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:576px) {
+    .menu-bar {
+        position: relative;
+    }
+    .bannar-section {
+        padding: 3rem 0;
+    }
+    .bannar-text h4 {
+        margin-bottom: 1.2rem;
+    }
+    .bannar-text h4 {
+        font-size: 17px;
+    }
+    .bannar-text h2 {
+        margin-bottom: 1.6rem;
+        font-size: 1.8rem;
+    }
+    .fiture-hading h2 {
+        font-size: 1.8rem;
+    }
+    .pricing-hading h1 {
+        font-size: 2.3rem;
+    }
+    .user-text h2 {
+        font-size: 1.6rem;
+    }
+    .form-control-lg {
+        font-size: .9rem;
+    }
+    .fiture-img {
+        width: 100%;
+    }
+    .fiture-text {
+        width: 100%;
+    }
+
+}
+@media (max-width:300px) {
+    .bannar-text h4 {
+        font-size: 10px;
+    }
+    .bannar-text h2 {
+        font-size: 1.2rem;
+    }
+    .form-control-lg {
+        font-size: .9rem;
+    }
+    .fiture-text {
+        padding: .9rem;
+    }
+    .fiture-text h4 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .text-muted {
+        font-size: 15px;
+    }
+    .prot-polio-hading {
+        padding: 0;
+    }
+    .prot-polio {
+        padding-top: 0;
+    }
+    .pricing-item ul li span {
+        width: 2rem;
+        font-size: .9rem;
+    }
+    .pricing-item ul li {
+        margin-top: .9rem;
+        font-size: .9rem;
+    }
+    .btn-outline-success {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .softwer-part-img img {
+        height: 15rem;
+    }
+    .lead {
+        font-size: .7rem;
+        margin-bottom: 0;
+    }
+    .contact-us .btn-primary {
+        font-size: 15px;
+    }
+    .pricing-hading h1 {
+        font-size: 1.29rem;
+    }
+    .pricing-hading p {
+        font-size: 1.2rem;
+    }
+    .pricing-item h2 {
+        font-size: 2rem;
+    }
+    .pricing-item ul li {
+        margin-top: .7rem;
+        font-size: .7rem;
+    }
+    
+
+
+}
+
